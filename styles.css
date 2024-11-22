@@ -247,6 +247,10 @@
 
 
   /* ProductDetail */
+  #productDetail {
+    height: 100%;
+  }
+
   .product-detail-close {
     background: var(--white);
     width: 14px;
