@@ -3,7 +3,7 @@ const burguerMenu = document.querySelector(".menu");
 const menuCarritoIcon = document.querySelector(".navbar-shopping-cart");
 const desktopMenu = document.querySelector(".desktop-menu");
 const mobileMenu = document.querySelector(".mobile-menu");
-const aside = document.querySelector(".product-detail")
+const shoppingCartContainer = document.querySelector("#shoppingCartContainer")
 const cardsContainer = document.querySelector(".cards-container");
 
 menuEmail.addEventListener('click', toggleDesktopMenu)
@@ -11,17 +11,17 @@ burguerMenu.addEventListener('click', toggleMobileMenu)
 menuCarritoIcon.addEventListener('click', toggleCarritoAside)
 
 function toggleDesktopMenu() {
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
 
     if(!isAsideClosed) {
-        aside.classList.add('inactive');
+        shoppingCartContainer.classList.add('inactive');
     }
 
     desktopMenu.classList.toggle('inactive');
 }
 
 function toggleMobileMenu() {
-    const isAsideClosed = aside.classList.contains('inactive');
+    const isAsideClosed = shoppingCartContainer.classList.contains('inactive');
 
     if(!isAsideClosed) {
         aside.classList.add('inactive');
@@ -42,7 +42,7 @@ function toggleCarritoAside() {
         desktopMenu.classList.add('inactive');
     };
 
-    aside.classList.toggle('inactive');
+    shoppingCartContainer.classList.toggle('inactive');
 }
 
 const productList = [];
@@ -54,27 +54,27 @@ productList.push({
 productList.push({
     name: 'Computer',
     price: 300,
-    image: 'https://www.worldcomputers.com.ec/wp-content/uploads/2022/03/Computador-de-escritiorio.webp',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRArv5j6L50B5pv4SSZfJ9Zo1rQPWP0k8ma-A&s',
 });
 productList.push({
     name: 'Laptop',
     price: 350,
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT84Fy08oMXKt99j3kD-x7c4s3YMMnWA5fbFA&s',
+    image: 'https://i.blogs.es/5165b0/surface-laptop-3-115/1366_2000.jpg',
 });
 productList.push({
     name: 'Tablet',
     price: 250,
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXMMcmyCUXbTQ0r1b1uEQGAGMxOKbP77PJsg&s',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3xlGhxQFDIFXqg7mnyprknF-Jg1o4koU7HA&s',
 });
 productList.push({
     name: 'Televisor',
     price: 400,
-    image: 'https://compucentro.co/wp-content/uploads/18471476-800-auto.png',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCtVZ0aOftgFissyTWiEJb0WkysNLdc7_-og&s',
 });
 productList.push({
     name: 'Nevera',
     price: 600,
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7a_pTd5gPVjlTdHkNkXwhvbAC7gx3kuexXg&s',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0hM1uwVLUZikP2PSL0Ym9c4x5DpzBRgnUg&s',
 });
 
 /*
